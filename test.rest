@@ -1,0 +1,28 @@
+# user
+POST http://127.0.0.1:8080/login
+
+{
+    "username": "sang",
+    "password": "456"
+}
+
+###
+#admin
+POST http://127.0.0.1:8080/login
+
+{
+    "username": "admin",
+    "password": "123"
+}
+
+###
+GET http://127.0.0.1:8080/funcWithJwt
+###
+GET http://127.0.0.1:8080/funcWithJwt
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfdXNlciwiLCJzdWIiOiJzYW5nIiwiZXhwIjoxNTc3NDY4NTM5fQ.l_n2HzA4TusL10yRmT8noW0NPln7IirwE4vj5AMowekyLReUmP3Mq9Rv5L7NfOwQ08GDWmdiKopscl3jIwdrVw
+###
+GET http://127.0.0.1:8080/funcWithoutJwt
+
+###
+GET http://127.0.0.1:8080/admin
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJhdXRob3JpdGllcyI6IlJPTEVfYWRtaW4sIiwic3ViIjoiYWRtaW4iLCJleHAiOjE1Nzc0Njg1NjR9.C8aa3GG4XTRgNADpPHWz-EPQL_9xS7iyDrhycuN4FRHxNkI0NekrLtupuDI-Vu8dL-0e55JZfEMEhRpCUWXl7Q
